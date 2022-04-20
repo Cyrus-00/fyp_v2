@@ -7,6 +7,7 @@ import 'package:fyp_v2/screens/fans.dart';
 import 'package:fyp_v2/screens/lights.dart';
 import 'package:fyp_v2/screens/nav_bar.dart';
 import 'package:fyp_v2/screens/rfid.dart';
+import 'package:intl/intl.dart';
 
 class SensorScreen extends StatefulWidget {
   const SensorScreen({Key? key}) : super(key: key);
@@ -16,6 +17,10 @@ class SensorScreen extends StatefulWidget {
 }
 
 class _SensorScreenState extends State<SensorScreen> {
+
+  getCurrentDate(){
+    return DateFormat('yyyy-MM-dd').format(DateTime.now());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -40,12 +45,13 @@ class _SensorScreenState extends State<SensorScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "June 14, 2022",
+                    getCurrentDate().toString(),
                     style: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
+
                   Text(
                     "WELCOME!",
                     style: TextStyle(

@@ -71,4 +71,7 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation platform('com.google.firebase:firebase-bom:29.3.1')
+
+//    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.1'
+//    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 }
